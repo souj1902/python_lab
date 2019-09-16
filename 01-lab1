@@ -1,0 +1,123 @@
+def listfun():
+	print("Methods in the list")
+	list1=[1,42,36,84,15,60]
+	print("Elements in list1 ",list1)
+	list1.append(7)
+	print("Appending 7 to the list",list1)
+	list1.insert(2,30)
+	print("Inserting 30 at second position",list1)
+	list2=[10,20,50,24,11]
+	print("Elements in list2 ",list2)
+	list2.extend(list1)
+	print("Extending the list by adding to another list",list2)
+	print("Counting in list",list1.count(36))
+	print("Length of the list", len(list1))
+	print("Element at the index of 5",list1.index(84))
+	print("Sorting lists",list1.sort())
+	list1.remove(42)
+	print("Removing an element from list",list1)
+
+def tuplefun():
+	print("Methods in tuples")
+	tuple1=(3,5,1,6,2,9)
+	print("Elements in the tuples1",tuple1)
+	tuple2=(11,16,12,19,0)
+	print("Elements in the tuples2",tuple2)
+	print("Concatenation of two tuples",tuple1+tuple2)
+	tuple3 = (tuple1,tuple2)
+	print("Nesting of tuples",tuple3)
+	tuple4=('hello world')*5
+	print("Repetition in tuples",tuple4)
+	print("Slicing in tuples",tuple1[::-1])
+	print("Slicing in tuples",tuple1[2:4])
+	print("Length of tuple3",len(tuple3))
+	list1=[0,1,2]
+	print("Printing the list elements",list1)
+	print("Converting list into tuple",tuple(list1))
+
+def setsfun():
+	print("Methods in sets")
+	set1 = {6,1,3,8,2,7}
+	print("Elements in set1",set1)
+	print("Adding a element in the set",set1.add(9))
+	set2 = {6,3,11,29,67}
+	print("Elements in set2",set2)
+	print("Union of two sets",set1.union(set2))
+	print("Intersection of two sets",set1.intersection(set2))
+	print("Difference of two sets",set1.difference(set2))
+	print("Clearing the sets",set1.clear())
+	print(set1)
+
+def dictionaryfun():
+	print("Methods in python")
+	dict1 = {1: 10,2: 20,3: 30,4: 40, 5: 50}
+	print("Dictionary elements along with keys ",dict1)
+	dict2 = {1: 5,2: 10,3: {4: 3,5: 6}}
+	print("Creating a nested of dictionary",dict2)
+	dict1[2] = 9
+	print("Updating dictionary",dict1)
+	print("Accessing elements in dictionary",dict1.get(2))
+	del dict1[3]
+	print("Deleting an element from the dictionary",dict1)
+
+def stringfun():
+	print("Methods in string")
+	string1 = "Hello world"
+	print("Printing string1 ",string1)
+	print("Accessing characters in string ",string1[2:6])
+	string2 = string1.replace('world','everyone')
+	print("Replacing a word in the string ",string2)
+	print("Upper case of a string ",string2.upper())
+	print("Lower case of a string ",string1.lower())
+	print("Join in string ",string1.join("!!!!"))
+
+listfun()
+tuplefun()
+setsfun()
+dictionaryfun()
+stringfun()
+===================== RESTART: /home/cs2016b108/lab1.py =====================
+Methods in the list
+Elements in list1  [1, 42, 36, 84, 15, 60]
+Appending 7 to the list [1, 42, 36, 84, 15, 60, 7]
+Inserting 30 at second position [1, 42, 30, 36, 84, 15, 60, 7]
+Elements in list2  [10, 20, 50, 24, 11]
+Extending the list by adding to another list [10, 20, 50, 24, 11, 1, 42, 30, 36, 84, 15, 60, 7]
+Counting in list 1
+Length of the list 8
+Element at the index of 5 4
+Sorting lists None
+Removing an element from list [1, 7, 15, 30, 36, 60, 84]
+Methods in tuples
+Elements in the tuples1 (3, 5, 1, 6, 2, 9)
+Elements in the tuples2 (11, 16, 12, 19, 0)
+Concatenation of two tuples (3, 5, 1, 6, 2, 9, 11, 16, 12, 19, 0)
+Nesting of tuples ((3, 5, 1, 6, 2, 9), (11, 16, 12, 19, 0))
+Repetition in tuples hello worldhello worldhello worldhello worldhello world
+Slicing in tuples (9, 2, 6, 1, 5, 3)
+Slicing in tuples (1, 6)
+Length of tuple3 2
+Printing the list elements [0, 1, 2]
+Converting list into tuple (0, 1, 2)
+Methods in sets
+Elements in set1 {1, 2, 3, 6, 7, 8}
+Adding a element in the set None
+Elements in set2 {67, 3, 6, 11, 29}
+Union of two sets {1, 2, 3, 67, 6, 7, 8, 9, 11, 29}
+Intersection of two sets {3, 6}
+Difference of two sets {1, 2, 7, 8, 9}
+Clearing the sets None
+set()
+Methods in python
+Dictionary elements along with keys  {1: 10, 2: 20, 3: 30, 4: 40, 5: 50}
+Creating a nested of dictionary {1: 5, 2: 10, 3: {4: 3, 5: 6}}
+Updating dictionary {1: 10, 2: 9, 3: 30, 4: 40, 5: 50}
+Accessing elements in dictionary 9
+Deleting an element from the dictionary {1: 10, 2: 9, 4: 40, 5: 50}
+Methods in string
+Printing string1  Hello world
+Accessing characters in string  llo 
+Replacing a word in the string  Hello everyone
+Upper case of a string  HELLO EVERYONE
+Lower case of a string  hello world
+Join in string  !Hello world!Hello world!Hello world!
